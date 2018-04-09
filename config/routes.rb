@@ -10,6 +10,14 @@ Rails.application.routes.draw do
     root to: "users#index"
   end
 
+  namespace :api do 
+    namespace :v1 do
+      resources :locations do 
+        resources :recordings
+      end
+    end
+  end
+
   get '/privacy', to: 'home#privacy'
   get '/terms', to: 'home#terms'
   resources :notifications, only: [:index]
