@@ -71,3 +71,4 @@ gem 'omniauth-twitter', '~> 1.4'
 gem 'omniauth-github', '~> 1.3'
 gem 'whenever', require: false
 gem 'knock', '~> 2.1', '>= 2.1.1'
+gem 'jwt'
