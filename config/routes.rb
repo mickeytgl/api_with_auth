@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   namespace :api do 
     namespace :v1 do
+      post :auth, to: "authentication#create"
       post 'member_token' => 'member_token#create'
       resources :locations do 
         resources :recordings
